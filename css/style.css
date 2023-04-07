@@ -481,10 +481,10 @@ Categories
 .categories__item {
   border: 1px solid #CDCDCD;
   border-radius: 3px;
-  min-width: 370px;
   height: 129px;
   display: flex;
   justify-content: space-between;
+  flex-basis: 370px;
   flex-grow: 1;
   transition: all .3s;
 }
