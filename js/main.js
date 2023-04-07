@@ -1,6 +1,6 @@
 $(function(){
 
-/* Управление слайдером баннера */
+/* Banner slider control */
 
   $('.banner-section__slider').slick({
     dots: true,
@@ -16,25 +16,25 @@ $(function(){
     ]
   });
 
-/* Управление табами */
+/* Tabs control */
 
   $('.tab').on('click', function(e){
     e.preventDefault();
 
     $($(this).siblings()).removeClass('tab--active');
-    $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+    $($(this).attr('href')).siblings().removeClass('tabs-content--active');
 
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs-content--active');
   });
 
-/* Добавление в любимые товары */
+/* Add to favourite */
 
   $('.product-item__favourite, .product-card__icon-favorite').on('click', function(){
     $(this).toggleClass('product-item__favourite--active')
   });
 
-/* Работа слайдера товаров */
+/* Item slider control */
 
   $('.product-slider').slick({
     slidesToShow: 4,
