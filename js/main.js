@@ -118,4 +118,10 @@ $(function(){
     $(this).next().slideToggle('200');
   });
 
+  $('.aside__btn').on('click', function(){
+    $(this).next().slideToggle();
+  });
+
+
+  
 });

@@ -1033,6 +1033,10 @@ button.catalog__filter-btnline {
   display: flex;
 }
 
+.aside__btn {
+  display: none;
+}
+
 .catalog__inner-aside {
   min-width: 290px;
   margin-right: 10px;
@@ -1040,6 +1044,7 @@ button.catalog__filter-btnline {
 
 .catalog__inner-list {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
