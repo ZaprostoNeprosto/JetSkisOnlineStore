@@ -1712,6 +1712,7 @@ Product card
 .card__tabs-box {
   background: #F0F0F4;
   display: flex;
+  gap: 20px;
   justify-content: space-around;
   align-items: center;
   padding: 22px 0;
@@ -1841,4 +1842,8 @@ Product card
 
 .product-slider .slick-dots .slick-active button {
   background-color: #1C62CD;
+}
+
+.product-card__btn-mobile {
+  display: none;
 }
