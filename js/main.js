@@ -122,6 +122,27 @@ $(function(){
     $(this).next().slideToggle();
   });
 
-
+  const seeMoreButton = document.querySelector('.see-more');
+  const listItems = document.querySelectorAll('.card-list__list-item');
+  
+  seeMoreButton.addEventListener('click', () => {
+    listItems.forEach((item) => {
+      if (!item.classList.contains('card-list__list-item--visible')) {
+        item.classList.add('card-list__list-item--visible');
+      } else {
+        item.classList.remove('card-list__list-item--visible');
+      }
+    });
+  });
   
 });
+
+const input = document.querySelector('.card__input-search');
+function handleResize() {
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    input.placeholder = 'Введите название магазина';
+  } else {
+    input.placeholder = '';
+  }
+}
+window.addEventListener('resize', handleResize);

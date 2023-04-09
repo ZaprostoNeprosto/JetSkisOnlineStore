@@ -174,10 +174,6 @@
     margin-left: 0;
   }
 
-  .card-list .list-item__title {
-    display: none;
-  }
-
   .tabs.card__tabs-box.mobile-overflow {
     padding-inline: 15px;
   }
@@ -187,6 +183,24 @@
     width: max-content;
     margin-inline: auto;
   }
+
+  .card__label-search::after {
+    display: none;
+  }
+
+  .card-list {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .card-list .list-item__title {
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+
 
 }
 
@@ -227,6 +241,182 @@
   .product__title {
     text-align: center;
   }
+
+}
+
+@media (max-width: 700px) {
+
+  .card-list {
+    display: block;
+  }
+
+  .card-list .list-item__title {
+    display: block;
+  }
+
+  .card-list__list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-list__list-item:first-child {
+    display: grid;
+    height: auto;
+    opacity: 1;
+  }
+
+  .card-list__list-item {
+    height: 0;
+    opacity: 0;
+  }
+  
+  .card-list__list-item--visible {
+    height: auto;
+    opacity: 1;
+  }
+
+  .card-list__list-item > * {
+    margin-block: 10px;
+    border: none;
+  }
+
+  .card-list > * {
+    border-bottom: 1px solid rgba(47, 48, 53, .1); 
+  }
+    
+  .list-item__workinghours {
+    margin-top: 5px;
+  }
+    
+  .list-item__buy  {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    margin: 20px 6px;
+   }
+    
+  .list-item__btn {
+    min-width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+    padding-block: 16px;
+  }
+    
+  .list-item__title-adress {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+    
+  .list-item__title-workinghours {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 5px;
+  }
+    
+  .list-item__title-available {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+    
+  .list-item__title-num {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+    
+  .list-item__adress {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+    
+  .list-item__workinghours {
+     grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .list-item__available {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+    
+  .list-item__num {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+
+  .list-item__title:nth-child(4) {
+    grid-column: inherit;
+  }
+
+  .card-list__list-item > * {
+    padding: 0;
+  }
+
+  .card__input-search {
+    display: block;
+    margin-top: 12px;
+    margin-left: 0;
+    background-color: #fff;
+    border: 1px solid #F0F0F4;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .card__input-search::placeholder {
+    content: 'Введите название магазина';
+  }
+
+  .card__top-line * {
+    color: #2F3035;
+  }
+
+  .card__tab-content.tabs-content {
+    margin-left: 0;
+  }
+
+  .card__top-line label {
+    margin-bottom: 0;
+  }
+
+  .card__top-line label.card__label-search {
+    margin-bottom: 25px;
+  }
+
+  .card__top-line label.card__label-pickup {
+    padding-block: 8px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgba(47, 48, 53, .1); 
+  }
+
+  .see-more {
+    display: block;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1C62CD;
+    border-bottom: 1px solid #1C62CD;
+    padding-right: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px auto;
+    width: max-content;
+  }
+  
+  .see-more::after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    background-image: url('../images/arrow-down.svg');
+    right: -16px;
+    top: 1px;
+    width: 12px;
+    height: 8px;
+  }
+
+  .see-more.see-more--active::after {
+    transform: rotate(180deg);
+  }
+
+
 }
 
 @media (max-width: 640px) {
@@ -413,4 +603,5 @@
   .pagination-list__item {
     margin: 0;
   }
+
 }
