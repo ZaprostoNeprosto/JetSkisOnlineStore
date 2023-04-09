@@ -26,6 +26,8 @@ $(function(){
 
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs-content--active');
+
+    $('.product-slider').slick('setPosition');
   });
 
 /* Add to favourite */
