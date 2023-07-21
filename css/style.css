@@ -448,7 +448,11 @@ Search
 }
 
 .search__content-input::placeholder {
-  color: #656464;
+  color: #C4C4C4;
+}
+
+.card__label-search input {
+  font-size: 14px;
 }
 
 .search__content-btn {
@@ -613,7 +617,7 @@ Popular products
 .product-item__favourite::before {
   content: '';
   position: absolute;
-  background-image: url('../images/favourite.svg');
+  background-image: url(../images/favourite.svg);
   width: 24px;
   height: 22px;
   top: 0;
@@ -621,7 +625,7 @@ Popular products
 }
 
 .product-item__favourite--active::before {
-  background-image: url('../images/favourite-active.svg');
+  background-image: url(../images/favourite-active.svg);
 }
 
 .product-item__basket {
@@ -937,7 +941,7 @@ Breadcrumbs
   content: "";
   position: absolute;
   right: 0;
-  background-image: url('../images/link-arrow.svg');
+  background-image: url(../images/link-arrow.svg);
   width: 6px;
   height: 9px;
   bottom: 5px;
@@ -1138,7 +1142,7 @@ Filter
 
 .filter__item-drop::before {
   content: "";
-  background-image: url('../images/arrow-down.svg');
+  background-image: url(../images/arrow-down.svg);
   position: absolute;
   left: 0;
   bottom: 5px;
@@ -1200,7 +1204,7 @@ Filter
   border-bottom: none;
   border-left: none;
   transform: rotate(0);
-  background-image: url('../images/checked-icon.svg');
+  background-image: url(../images/checked-icon.svg);
 }
 
 .jq-radio.checked .jq-radio__div {
@@ -1502,7 +1506,7 @@ Filter
   content: '';
   position: relative;
   display: inline-block;
-  background-image: url('../images/arrow-down.svg');
+  background-image: url(../images/arrow-down.svg);
   right: -16px;
   top: 1px;
   width: 12px;
@@ -1767,7 +1771,7 @@ Product card
   content: "";
   position: absolute;
   background-image: url(../images/Search-icon.svg);
-  left: 290px;
+  left: 260px;
   bottom: 1px;
   width: 16px;
   height: 16px;

@@ -360,10 +360,6 @@
     width: 100%;
   }
 
-  .card__input-search::placeholder {
-    content: 'Введите название магазина';
-  }
-
   .card__top-line * {
     color: #2F3035;
   }
@@ -405,7 +401,7 @@
     content: '';
     position: relative;
     display: inline-block;
-    background-image: url('../images/arrow-down.svg');
+    background-image: url(../images/arrow-down.svg);
     right: -16px;
     top: 1px;
     width: 12px;
@@ -542,7 +538,7 @@
   .top-item__info::after,
   .top-item__shop::after {
     content: "";
-    background-image: url('../images/arrow-down.svg');
+    background-image: url(../images/arrow-down.svg);
     position: absolute;
     right: 12px;
     bottom: 20px;

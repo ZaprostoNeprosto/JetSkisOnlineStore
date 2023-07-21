@@ -140,18 +140,17 @@ $(function(){
 });
 
 function handleResize() {
-  // Проверяем, есть ли элемент с id="page-id" на странице
+
   const pageIdElement = document.getElementById("card__input-search");
 
   if (pageIdElement) {
-    const input = document.getElementById("input");
 
     if (window.matchMedia("(max-width: 700px)").matches) {
-      input.placeholder = 'Введите название магазина';
+      pageIdElement.placeholder = 'Введите название магазина';
     } else {
-      input.placeholder = '';
+      pageIdElement.placeholder = 'Введите название';
     }
   }
 }
-
+handleResize()
 window.addEventListener('resize', handleResize);
