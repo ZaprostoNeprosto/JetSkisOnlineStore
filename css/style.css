@@ -241,7 +241,7 @@ Main banner
   background-color: transparent;
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   z-index: 5;
   outline: none;
   cursor: pointer;
@@ -687,8 +687,8 @@ color: #2F3035;
   padding: 6px 16px;
   background-color: #1C62CD;
   position: absolute;
-  left: 1px;
-  top: 1px;
+  left: 0;
+  top: 0;
   text-transform: uppercase;
   color: #fff;
   font-size: 12px;
@@ -1519,6 +1519,7 @@ Filter
 
 .filter__extra.filter__item-drop--active::after {
   transform: rotate(180deg);
+  top: 0;
 }
 
 .filter-btn__reset {
