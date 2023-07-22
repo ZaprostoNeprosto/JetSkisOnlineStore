@@ -104,13 +104,13 @@ Header
 .menu-mobile__link {
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-  padding: 46px 0 0 53px;
+  padding: 23px 0 23px 53px;
+  width: 100%;
 }
 
 .menu-mobile__img {
   position: absolute;
   left: 11px;
-  bottom: 0;
 }
 
 .menu__mobile-linewrapper {

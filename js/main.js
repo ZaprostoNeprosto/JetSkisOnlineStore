@@ -124,17 +124,8 @@ $(function(){
     $(this).next().slideToggle();
   });
 
-  const seeMoreButton = document.querySelector('.see-more');
-  const listItems = document.querySelectorAll('.card-list__list-item');
-  
-  seeMoreButton.addEventListener('click', () => {
-    listItems.forEach((item) => {
-      if (!item.classList.contains('card-list__list-item--visible')) {
-        item.classList.add('card-list__list-item--visible');
-      } else {
-        item.classList.remove('card-list__list-item--visible');
-      }
-    });
+  $('.see-more').on('click', function(){
+    $('.card-list__list-item').toggleClass('card-list__list-item--visible');
   });
   
 });
