@@ -233,6 +233,10 @@ Main banner
   max-width: 870px;
 }
 
+.banner-section__slider-item {
+  display: none;
+}
+
 .banner-section__slider-btn,
 .product-slider__slider-btn {
   position: absolute;
