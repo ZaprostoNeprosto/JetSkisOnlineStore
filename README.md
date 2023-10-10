@@ -1,5 +1,10 @@
 <h1 align="center"> JetSkisOnlineStore</h1>
+<p>Вёрстка по макету: главная страница, список товаров и фильтры, карточка товара.</p>
+<br/>
+
+
 <img src="screenshots/mainpage.png" title="main page" alt="main page">
+
 <h2 align="left">Описание проекта</h2>
 
 Взглянуть на проект можно [по сылке](https://zaprostoneprosto.github.io/JetSkisOnlineStore/). 
